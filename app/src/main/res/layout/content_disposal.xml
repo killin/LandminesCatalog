@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="mapps.landmines.DisposalActivity"
+    tools:showIn="@layout/activity_disposal">
+
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Landmine name"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="@dimen/content_size"
+            android:text="@string/neutralization_label"/>
+
+        <TextView
+            android:id="@+id/neutralization"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:text="@string/no_data"
+            android:textSize="@dimen/content_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/disarming_label"
+            android:textSize="@dimen/content_size"/>
+
+        <TextView
+            android:id="@+id/disarming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:text="@string/no_data"
+            android:textSize="@dimen/content_size"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:text="@string/placement_label"
+            android:textSize="@dimen/content_size"/>
+
+        <TextView
+            android:id="@+id/placement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="end"
+            android:layout_weight="1"
+            android:paddingBottom="10dp"
+            android:text="@string/no_data"
+            android:textSize="@dimen/content_size"/>
+    </LinearLayout>
+
+
+
+</LinearLayout>

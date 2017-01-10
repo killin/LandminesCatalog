@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/image_side"
+        android:layout_height="@dimen/image_side"
+        android:scaleType="fitStart"
+        android:src="@drawable/logo"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/nameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/landmine_name_textview"
+        android:textStyle="bold"
+        android:textSize="@dimen/title_size"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:paddingRight="@dimen/general_padding"
+        android:paddingTop="@dimen/general_padding"
+        android:paddingBottom="@dimen/general_padding" />
+
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/type_label"
+        android:textStyle="bold"
+        android:textSize="@dimen/content_size"
+        android:layout_below="@+id/nameText"
+        android:layout_alignLeft="@+id/nameText"
+        android:layout_alignStart="@+id/nameText"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/landmine_label"
+        android:textSize="@dimen/content_size"
+        android:layout_below="@+id/nameText"
+        android:layout_toRightOf="@+id/typeLabel"
+        android:layout_toEndOf="@+id/typeLabel"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:id="@+id/countryOfOriginLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_of_origin_label"
+        android:textStyle="bold"
+        android:textSize="@dimen/content_size"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/typeLabel"
+        android:layout_alignLeft="@+id/typeLabel"
+        android:layout_alignStart="@+id/typeLabel" />
+    <TextView
+        android:id="@+id/countryOfOrigin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/country_of_origin_textview"
+        android:textSize="@dimen/content_size"
+        android:layout_alignTop="@+id/countryOfOriginLabel"
+        android:layout_toRightOf="@+id/countryOfOriginLabel"
+        android:layout_toEndOf="@+id/countryOfOriginLabel"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:id="@+id/countriesUsedLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countries_used_in_label"
+        android:textStyle="bold"
+        android:textSize="@dimen/content_size"
+        android:paddingBottom="2dp"
+        android:layout_below="@+id/countryOfOriginLabel"
+        android:layout_alignLeft="@+id/countryOfOriginLabel"
+        android:layout_alignStart="@+id/countryOfOriginLabel" />
+
+    <TextView
+        android:id="@+id/countriesUsed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/countries_used_in_textview"
+        android:textSize="@dimen/content_size"
+        android:layout_alignTop="@+id/countriesUsedLabel"
+        android:layout_toRightOf="@+id/countriesUsedLabel"
+        android:layout_toEndOf="@+id/countriesUsedLabel" />
+
+</RelativeLayout>
